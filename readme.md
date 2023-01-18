@@ -19,3 +19,13 @@ class Product extends Model
     use HasInventory;
 }
 ```
+
+# Documention
+Load model current quantity
+```
+    Product::query()
+    ->sum('inventory', 'quantity')
+    ...
+    ->get();
+            
+```
