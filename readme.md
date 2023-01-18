@@ -39,3 +39,11 @@ Product::query()
 ...
 ->get();
 ```
+
+Get model inventory history
+```
+$product->inventory()
+...
+->latest()
+->paginate();
+```
