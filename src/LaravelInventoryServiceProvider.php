@@ -1,15 +1,9 @@
 <?php
 
-namespace Laravel\Sanctum;
+namespace Rajabit\LaravelInventory;
 
-use Illuminate\Auth\RequestGuard;
-use Illuminate\Contracts\Http\Kernel;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
+
 use Illuminate\Support\ServiceProvider;
-use Laravel\Sanctum\Console\Commands\PruneExpired;
-use Laravel\Sanctum\Http\Controllers\CsrfCookieController;
-use Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful;
 use Rajabit\LaravelInventory\LaravelInventory;
 
 class LaravelInventoryServiceProvider extends ServiceProvider
@@ -43,10 +37,6 @@ class LaravelInventoryServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__.'/../config/inventory.php' => config_path('inventory.php'),
             ], 'inventory-config');
-
-            $this->commands([
-                PruneExpired::class,
-            ]);
         }
     }
 

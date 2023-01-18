@@ -13,7 +13,7 @@ class LaravelInventory
 
 
     /**
-     * Indicates if Sanctum's migrations will be run.
+     * Indicates if inventory'ies migrations will be run.
      *
      * @var bool
      */
@@ -33,7 +33,7 @@ class LaravelInventory
 
 
     /**
-     * Determine if Sanctum's migrations should be run.
+     * Determine if inventory'ies migrations should be run.
      *
      * @return bool
      */
@@ -43,7 +43,7 @@ class LaravelInventory
     }
 
     /**
-     * Configure Sanctum to not register its migrations.
+     * Configure inventory to not register its migrations.
      *
      * @return static
      */
