@@ -24,7 +24,7 @@ class Product extends Model
 Load model current quantity
 ```
 Product::query()
-->sum('inventory', 'quantity')
+->withSum('inventory', 'quantity')
 ...
 ->get();
 ```
