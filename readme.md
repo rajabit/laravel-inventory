@@ -1,8 +1,19 @@
 # Laravel Inventory
 
 1. Installation
+
 ```sh
 composer require rajabit/laravel-inventory
+```
+
+Publish package file
+```sh
+php artisan vendor:publish --provider="Rajabit\LaravelInventory\LaravelInventoryServiceProvider"
+```
+
+Migrate table
+```sh
+php artisan migrate
 ```
 
 2. use the Inventory in your model's
