@@ -31,8 +31,10 @@ class Product extends Model
 }
 ```
 
-# Documention
-##Load model current quantity
+## Documention
+
+
+### Load model current quantity ###
 ```
 Product::query()
 ->withSum('inventory', 'quantity')
@@ -40,7 +42,7 @@ Product::query()
 ->get();
 ```
 
-##Get model inventory history
+### Get model inventory history ###
 ```
 $product->inventory()
 ...
@@ -48,7 +50,7 @@ $product->inventory()
 ->paginate();
 ```
 
-##Add products to the inventory
+### Add products to the inventory ###
 ```
 $product->addInventory($quantity);
 ```
@@ -75,7 +77,7 @@ $product->addInventory(
 );
 ```
 
-##Subtract products from the inventory
+### Subtract products from the inventory ###
 ```
 $product->subInventory($quantity);
 ```
