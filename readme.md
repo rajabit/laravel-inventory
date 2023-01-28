@@ -32,9 +32,9 @@ class Product extends Model
 ```
 
 ## Documention
-[$product->inventory()](https://github.com/rajabit/laravel-inventory/blob/main/readme.md#load-model-current-quantity)__
-[$product->addInventory()](https://github.com/rajabit/laravel-inventory#add-products-to-the-inventory)__
-[$product->subInventory()](https://github.com/rajabit/laravel-inventory#subtract-products-from-the-inventory)__
+[$product->inventory()](https://github.com/rajabit/laravel-inventory/blob/main/readme.md#load-model-current-quantity) __
+[$product->addInventory()](https://github.com/rajabit/laravel-inventory#add-products-to-the-inventory) __
+[$product->subInventory()](https://github.com/rajabit/laravel-inventory#subtract-products-from-the-inventory) __
 
 ### Load model current quantity ###
 ```
